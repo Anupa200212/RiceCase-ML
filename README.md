@@ -49,4 +49,4 @@ def split_data():
 create_dirs()
 split_data()
 
-print("✅ Dataset split completed.")
+//print("✅ Dataset split completed.")
