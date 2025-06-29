@@ -46,7 +46,4 @@ def split_data():
                 shutil.copy2(src, dst)
 
 # Run functions
-create_dirs()
-split_data()
 
-print("✅ Dataset split completed.")
