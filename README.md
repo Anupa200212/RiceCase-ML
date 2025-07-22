@@ -366,3 +366,12 @@ plt.legend()
 plt.title("Training and Validation Loss")
 plt.show()
 
+# 🔹 Confusion Matrix
+plt.figure(figsize=(6, 5))
+sns.heatmap(cm, annot=True, fmt="d", cmap="Blues", xticklabels=class_labels, yticklabels=class_labels)
+plt.xlabel("Predicted")
+plt.ylabel("Actual")
+plt.title("Confusion Matrix")
+plt.savefig(conf_matrix_path)
+plt.show()
+print(f"✅ Confusion matrix saved at: {conf_matrix_path}")
